@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*font variables*/
+
+$font-family-standard: 15px Verdana, Geneva, Tahoma, sans-serif;
+$font-size-regular: 20px;
+$font-size-medium: 30px;
+$font-size-large: 40px;
+$font-size-heading: 2rem;
+
+/*unit size variables*/
+
+$hw-deafult: 100%;
+$height-small: 100px;
+$height-medium: 200px;
+$height-large: 400px;
+
+$padding-medium-rect: 12px 20px;
+$padding-medium-square: 15px 15px;
+$padding-large: 80px;
+
+$margin-small-rect:8px 0px;
+$margin-right-small: 10px;
+$margin-right-large: 20px;
+$margin-bottom-large: 40px;
+
+$grid-gap-standard: 20px;
+
+/*color variables*/
+
+$color-light-pink: #fde8cd;
+$color-light-green: #70af85;
+$color-violet: #654062;
+$color-grey:  #bedbbb;
+$color-kind-grey:#cdd0cb;
+$color-orange:#f8d49d;
+$color-alert:#c75643;
+$color-white: #ffffff;
+$color-light-orange: #ff8e71 ;
+$color-light-blue:#93abd3;
+
+/*border styles*/
+
+$border-red: solid #c05555 5px;
+$border-grey: solid #707070 3px;
+$border-violet: solid #6a2c70 5px;
+$border-radius-small:20px;
+
+/*animation variables*/
+
+$duration: 10s;
+$timing-function: linear;
+$delay: 2s;
+$iteration-count: infinite;
+$direction: alternate;
+
+/*other variables*/
+
+$opacity-deafult: 0.5;
+$column-temp-0:auto;
+$column-temp-1: auto auto;
+$column-temp-2: auto auto auto;
+$column-temp-3: auto auto auto auto;
+
+
+// html,body{
+//   display: grid;
+//   height: 100%;
+//   width: 100%;
+//   place-items: center;
+//   background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+// }
+::selection{
+  background: #fa4299;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #fa4299;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+@mixin background($property)
+{
+    background-color: $property;
+}
+
+.b-color
+  {
+    background-color: #222831;
+  }
+
+  .navbar-brand{
+    font-size: $font-size-heading;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  i {
+    
+  
+    span > & {
+         margin-right: $margin-right-large ;
+      }
+  
+      a > & {
+        margin-right: $margin-right-small;
+      }
+    
+  }
+
+  
+  .nav-item
+  {
+      & > .nav-link
+      {
+          font-size: $font-size-regular;
+      }
+  }
+
+  .navbar-brand{
+    color: white;
+  }
+
+  #navbarSupportedContent
+  {
+    & a 
+    {
+      color: white;
+    }
+  }
+
+  .btn 
+  {
+
+      
+      &-rd:hover
+      {
+        @include background($color-light-orange);
+      }
+
+      &-sub
+      {
+
+        @include background($color-light-blue);
+
+        &:hover
+        {
+          @include background(#6f9eaf);
+        }
+       
+      }
+  }
+
+  .btn-thm
+  {
+    margin: 10px;
+    background-color: white;
+    color: black;
+  }
+
+

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
+        <strong>Success!</strong> Your form request has been successfully submitted
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    </div>
+    <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
+            <strong>Error!</strong> Your form request has not been sent due to errors
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    <div class="container">
+        <h1>Form Validataion</h1>
+        <form>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your Full Name">
+              <small id="namevalid" class="form-text text-muted invalid-feedback">
+                      Your full name should only contain letters and spaces with min length of 2, max of 20.
+              </small>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input id="username" type="text" class="form-control"  placeholder="Enter your username">
+                <small id="usernamevalid" class="form-text text-muted invalid-feedback">
+                        Special characters like (* and _) are allowed with digits and letters. Maxlength:10
+                      </small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                        Your email must be a valid email.
+                      </small>
+            </div>
+
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+                <small id="passwordvalid" class="form-text text-muted invalid-feedback">
+                      Digits, letters , special characters(*, _ , - ) are allowed, Minimum length should be 8, max:20.
+                      </small>
+            </div>
+
+
+                        <div class="form-group">
+                            <label for="url">Enter URL</label>
+                            <input type="text" class="form-control" id="url" placeholder="Enter your URL">
+                            <small id="urlvalid" class="form-text text-muted invalid-feedback">
+                              Please enter a valid URL.
+                            </small>
+                        </div>
+
+
+                          <div class="form-group">
+                              <label for="ip">Enter Laptop IP Address</label>
+                              <input type="text" class="form-control" id="ip" placeholder="Enter your IP">
+                              <small id="IPvalid" class="form-text text-muted invalid-feedback">
+                                Please enter a valid IP Address.
+                              </small>
+                          </div>
+
+
+                          <div class="form-group">
+                              <label for="dob">Enter Your DOB</label>
+                              <input type="text" class="form-control" id="dob" placeholder="DD:MM:YYYY HH:MM:YYYY">
+                              <small id="DOBvalid" class="form-text text-muted invalid-feedback">
+                                Please enter your DOB in the mentioned format, Birth Year should be between 1900 and 2020.
+                              </small>
+                         </div>
+
+                          <div class="form-group">
+                                <label for="phone">Enter your phone number</label>
+                                <input class="form-control" name="phone" id="phone" rows="3" placeholder="countryCode-XXX-XXX-XXXX         eg: +91-123-456-7890">
+                                <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                      Please enter a valid phone number
+                                </small>
+                          </div>
+
+
+
+                      <div class="form-group">
+                            <label for="address">Enter your address</label>
+                            <textarea class="form-control" name="address" id="address" rows="3" placeholder="Max 256 Characters allowed"></textarea>
+                            <small id="emailvalid" class="form-text text-muted invalid-feedback">
+                                  Please enter a valid address.
+                            </small>
+                      </div>
+
+
+            <button id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

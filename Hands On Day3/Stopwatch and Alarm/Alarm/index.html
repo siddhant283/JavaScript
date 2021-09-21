@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Importing Fontawesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+     <div class="container">
+      <div class="alarm">
+        <h1>Alarm</h1>
+        <i class="far fa-clock fa-4x"></i>
+        <div class="inp">
+          <h2>HH</h2>
+          <h2>MM</h2>
+          <h2>SS</h2>
+          <input id="hrs" type="number" min="0" max="23" name="hours" value="" placeholder="00">
+          <input id="minutes" type="number" min="0" max="59" name="minutes" value="" placeholder="00">
+          <input id="sec" type="number" min="0" max="59" name="minutes" value="" placeholder="00">
+          <span>
+            <label for="Once">Once</label>
+            <input type="radio" id="Once" name="frequency" value="Once">
+          </span>
+          <span>
+            <label for="Daily">Daily</label>
+            <input type="radio" id="Daily" name="frequency" value="Daily">
+          </span>
+          <span>
+            <label for="Daily">Weekly</label>
+            <input type="radio" id="Weekly" name="frequency" value="Weekly">
+          </span>
+        </div>
+        <div class="buttons">
+          <button id="Set" type="button" class="btn btn-danger">Set</button>
+          <button id="Snooze" type="button" class="btn btn-danger">Snooze</button>
+          <button id="Stop" type="button" class="btn btn-danger">Stop</button>
+        </div>
+      </div>
+     </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+  </html>

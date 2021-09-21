@@ -1,0 +1,65 @@
+html
+{
+  height:100%;
+}
+
+body
+{
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.alarm
+{
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1aa9b;
+}
+
+.alarm h1,i
+{
+  margin: 10px;
+}
+
+.inp
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  margin: 30px;
+  text-align: center;
+}
+
+input{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inp label
+{
+  font-weight: bold;
+}
+
+.btn
+{
+  margin: 20px;
+}

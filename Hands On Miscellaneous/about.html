@@ -1,0 +1,160 @@
+<!DOCTYPE html >
+<html lang="en" dir="ltr">
+  <head>
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Importing CSS-->
+    <link id="theme-stylesheet" rel="stylesheet" href="style_dark.css">
+     <!-- Importing Fontawesome -->
+     <link rel="stylesheet" href="fontawesome-free-5.15.1-web\css\all.css">
+
+    <title>Monuments</title>
+  </head>
+  <body onload="myFunction(event)">
+
+    <nav class="navbar navbar-expand-lg b-color" id="home">
+        <span class="navbar-brand"><i class="fas fa-archway fa-2x mg1"></i>Monuments of India</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="about.html">About Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="popular.html">Popular Monuments<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="contact.html">Contact-Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn-rd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+          Follow Us On
+        </a>
+        <div class="dropdown-menu b-color" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-facebook "></i>Facebook</a>
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-instagram "></i>Instagram</a>
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-twitter "></i>Twitter</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <button type="button" onclick="changeColor(event)" class="btn-thm btn btn-sm">Change theme</button>
+      </li>
+  </ul>
+</div>
+</nav>
+
+
+    <section id="aboutUs" class="p-3 bg-contact text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5 class="display-4">About Us</h5>
+            <p>India is one of the most beautiful countries in the world and is best known for its colourful culture and fascinating heritage.
+               Its grand monuments, like the Taj Mahal act as strong pillars of the rich and deep history that India possesses.
+               From their splendid architecture to a strong legacy, the historical monuments of India speak volumes.</p>
+            <p>We aim to enhance your experience in exploring rich Indian heritage and arrange a life time visit to India. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+     <!-- Search Section -->
+     <section id="search" class="p-3" style="background-color: #c7cfb7;">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <div class="card text-center mt-3">
+                    <div class="card-body">
+                      <i class="fab fa-fort-awesome-alt fa-4x"></i>
+                        <p class="h2">Search Your Mounumenmt</p>
+                        <div class="gcse-search"></div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>                           
+            </div>
+        </div>
+    </section>
+
+<!--Planning Section-->
+
+    <section id="planning" class="p-4" style="background-color:#eff7e1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                           <i class="fas fa-gopuram fa-4x"></i>
+                            <p class="h2">Pick Monument</p>
+                            <p>Pick your favourite Monument to travel in India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fas fa-ticket-alt fa-4x"></i>
+                            <p class="h2">Book Tickets</p>
+                            <p>Book tickets from multiple options and get discounts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center mt-3">
+                        <div class="card-body">
+                            <i class="fa fa-plane-departure fa-4x text-teal"></i>
+                            <p class="h2">Travel</p>
+                            <p>Pack Your Bags! and travel to the destination you love.</p>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                  <a href="plan.html"> <button class="btn bg-contact btn-lg btn-rd">
+                       <i class="fa fa-play mr-2"></i> Start Planning
+                   </button></a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Footer -->
+ <footer class="p-3 b-color text-white text-center">
+    <div class="">
+         <div class="">
+             <div class="fm">
+                 <h3>Welcome to Indian Monuments !</h3>
+                 <h6>Art, Culture and Heritage.</h6>
+                 <h6>Enjoy a seamless journey to search and visit your dream monument in India.</h6>
+             </div>
+         </div>
+     </div>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="bhvr.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=b27f6e82b37620716"></script>
+  </body>
+</html>

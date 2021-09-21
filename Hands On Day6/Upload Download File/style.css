@@ -1,0 +1,24 @@
+
+.container
+{
+  background-color: #eaac7f;
+  padding: 20px;
+  margin: 30px;
+}
+
+.container *
+{
+  margin: 15px;
+}
+
+.container h1
+{
+  text-align: center;
+}
+
+.output
+{
+  padding: 20px;
+  margin: 30px;
+  background-color: white;
+}

@@ -1,0 +1,38 @@
+
+body
+{
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.user-input
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaac7f;
+}
+
+i
+{
+  margin: 10px;
+}
+.inp-out > *
+{
+  margin: 20px;
+}

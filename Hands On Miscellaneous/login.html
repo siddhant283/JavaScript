@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_dark.css">
+       <!-- Importing Fontawesome -->
+       <link rel="stylesheet" href="fontawesome-free-5.15.1-web\css\all.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg b-color" id="home">
+        <span class="navbar-brand"><i class="fas fa-archway fa-2x mg1"></i>Monuments of India</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="about.html">About Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="popular.html">Popular Monuments<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a target="_blank" class="nav-link px-3 btn-rd" href="contact.html">Contact-Us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn-rd" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+          Follow Us On
+        </a>
+        <div class="dropdown-menu b-color" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-facebook "></i>Facebook</a>
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-instagram "></i>Instagram</a>
+          <a class="dropdown-item btn-rd" href="#"><i class="fab fa-twitter "></i>Twitter</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a href="#login.html" target="_blank"><button class="btn btn-sm btn-rd btn-thm">Login/SignUp</button></a>
+      </li>
+  </ul>
+</div>
+</nav>
+
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">
+     Login Form</div>
+    <div class="title signup">
+     Signup Form</div>
+  </div>
+<div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked>
+      <input type="radio" name="slide" id="signup">
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Signup</label>
+      <div class="slider-tab">
+</div>
+</div>
+<div class="form-inner">
+      <form action="#" class="login">
+        <div class="field">
+          <input id="loginUsername" type="text" placeholder="Username" required>
+        </div>
+<div class="field">
+          <input id="loginPassword" type="password" placeholder="Password" required>
+        </div>
+
+<div class="field btn">
+          <div class="btn-layer">
+          </div>
+<input id="Login" type="submit" value="Login">
+        </div>
+<div id="validationDisplay" class="">
+<div id="notMemeber" class="signup-link">
+Not a member? <a href="">Signup now</a></div>
+</div>
+
+</form>
+<form action="#" class="signup" id="SignUp">
+        <div class="field">
+          <input id="signupUsername" type="text" placeholder="Username" required>
+        </div>
+
+        <div class="field">
+                      <input id="signupUseremail" type="text" placeholder="Email" required>
+                    </div>
+
+<div class="field">
+          <input id="signupUserpwd" type="password" placeholder="Password" required>
+        </div>
+<div class="field">
+          <input id="signupUsercpwd" type="password" placeholder="Confirm password" required>
+        </div>
+<div class="field btn">
+          <div class="btn-layer">
+</div>
+<input id="getStarted" type="submit" value="Get Started">
+        </div>
+<div class="signup-link" id="signupMsg">
+
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+<!-- Main Footer -->
+<footer class="p-3 b-color text-white text-center">
+  <div class="">
+       <div class="">
+           <div class="fm">
+               <h3>Welcome to Indian Monuments !</h3>
+               <h6>Art, Culture and Heritage.</h6>
+               <h6>Enjoy a seamless journey to search and visit your dream monument in India.</h6>
+           </div>
+       </div>
+   </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>  
+</body>
+</html>

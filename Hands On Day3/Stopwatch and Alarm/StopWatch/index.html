@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+
+          <div class="control">
+            <h1 style="text-align:center;">StopWatch</h1>
+            <div class="screen">
+              <h2 id="h-hrs">Hours</h2>
+              <h2 id="h-mins">Minutes</h2>
+              <h2 id="h-secs">Seconds</h2>
+              <input id="hour" class="inp" type="number" min="0" max="99" name="hours" value="" placeholder="00">
+              <h2> :</h2>
+              <input id="minute" class="inp" type="number" min="0" max="59" name="minutes" value="" placeholder="00">
+              <h2> :</h2>
+              <input id="sec" class="inp" type="number" min="0" max="59" name="seconds" value="" placeholder="00">
+            </div>
+            <div class="" style="text-align:center;">
+              <button id="Start" type="button" class="btn btn-outline-info">Start</button>
+              <button id="Reset" type="button" class="btn btn-outline-info">Reset</button>
+              <button id="Stop" type="button" class="btn btn-outline-info">Stop</button>
+              <button id="Resume" type="button" class="btn btn-outline-info">Resume</button>
+            </div>
+          </div>
+
+
+
+      </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+    </body>
+  </html>
